@@ -1,23 +1,24 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.List;
-import javax.annotation.PostConstruct;
+import com.netease.common.constant.Constants;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.CacheUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.system.domain.SysConfig;
+import com.netease.system.mapper.SysConfigMapper;
+import com.netease.system.service.ISysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.CacheUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.domain.SysConfig;
-import com.ruoyi.system.mapper.SysConfigMapper;
-import com.ruoyi.system.service.ISysConfigService;
+
+import javax.annotation.PostConstruct;
+import java.util.List;
 
 /**
  * 参数配置 服务层实现
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysConfigServiceImpl implements ISysConfigService

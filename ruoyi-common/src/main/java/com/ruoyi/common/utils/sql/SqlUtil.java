@@ -1,12 +1,12 @@
-package com.ruoyi.common.utils.sql;
+package com.netease.common.utils.sql;
 
-import com.ruoyi.common.exception.base.BaseException;
-import com.ruoyi.common.utils.StringUtils;
+import com.netease.common.exception.base.BaseException;
+import com.netease.common.utils.StringUtils;
 
 /**
  * sql操作工具类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class SqlUtil
 {

@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysConfig;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysConfig;
 
 /**
  * 参数配置 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysConfigMapper
-{
+public interface SysConfigMapper {
     /**
      * 查询参数配置信息
      * 

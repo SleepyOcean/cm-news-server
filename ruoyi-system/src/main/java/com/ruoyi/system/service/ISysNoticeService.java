@@ -1,15 +1,15 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.system.domain.SysNotice;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysNotice;
 
 /**
  * 公告 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface ISysNoticeService
-{
+public interface ISysNoticeService {
     /**
      * 查询公告信息
      * 

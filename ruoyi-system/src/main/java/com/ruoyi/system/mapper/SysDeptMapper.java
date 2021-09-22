@@ -1,13 +1,14 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.common.core.domain.entity.SysDept;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
-import com.ruoyi.common.core.domain.entity.SysDept;
 
 /**
  * 部门管理 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public interface SysDeptMapper
 {

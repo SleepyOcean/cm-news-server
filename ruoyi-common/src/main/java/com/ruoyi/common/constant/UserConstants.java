@@ -1,9 +1,9 @@
-package com.ruoyi.common.constant;
+package com.netease.common.constant;
 
 /**
  * 用户常量信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class UserConstants
 {

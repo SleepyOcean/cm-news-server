@@ -1,13 +1,13 @@
-package com.ruoyi.framework.shiro.util;
+package com.netease.framework.shiro.util;
 
+import com.netease.framework.shiro.realm.UserRealm;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.mgt.RealmSecurityManager;
-import com.ruoyi.framework.shiro.realm.UserRealm;
 
 /**
  * 用户授权信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class AuthorizationUtils
 {

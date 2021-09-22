@@ -1,15 +1,15 @@
-package com.ruoyi.common.utils;
+package com.netease.common.utils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * Map通用处理方法
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class MapDataUtil
 {

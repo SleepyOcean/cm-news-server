@@ -1,9 +1,19 @@
-package com.ruoyi.web.controller.system;
+package com.netease.web.controller.system;
 
-import java.util.Date;
-import java.util.List;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
+import com.netease.common.config.NetEaseConfig;
+import com.netease.common.constant.ShiroConstants;
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.domain.entity.SysMenu;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.core.text.Convert;
+import com.netease.common.utils.CookieUtils;
+import com.netease.common.utils.DateUtils;
+import com.netease.common.utils.ServletUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.framework.shiro.service.SysPasswordService;
+import com.netease.system.service.ISysConfigService;
+import com.netease.system.service.ISysMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,25 +21,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.ruoyi.common.config.RuoYiConfig;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.domain.entity.SysMenu;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.utils.CookieUtils;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.framework.shiro.service.SysPasswordService;
-import com.ruoyi.system.service.ISysConfigService;
-import com.ruoyi.system.service.ISysMenuService;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 首页 业务处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 public class SysIndexController extends BaseController
@@ -56,8 +57,8 @@ public class SysIndexController extends BaseController
         mmap.put("sideTheme", configService.selectConfigByKey("sys.index.sideTheme"));
         mmap.put("skinName", configService.selectConfigByKey("sys.index.skinName"));
         mmap.put("ignoreFooter", configService.selectConfigByKey("sys.index.ignoreFooter"));
-        mmap.put("copyrightYear", RuoYiConfig.getCopyrightYear());
-        mmap.put("demoEnabled", RuoYiConfig.isDemoEnabled());
+        mmap.put("copyrightYear", NetEaseConfig.getCopyrightYear());
+        mmap.put("demoEnabled", NetEaseConfig.isDemoEnabled());
         mmap.put("isDefaultModifyPwd", initPasswordIsModify(user.getPwdUpdateDate()));
         mmap.put("isPasswordExpired", passwordIsExpiration(user.getPwdUpdateDate()));
         mmap.put("isMobile", ServletUtils.checkAgentIsMobile(ServletUtils.getRequest().getHeader("User-Agent")));
@@ -126,7 +127,7 @@ public class SysIndexController extends BaseController
     @GetMapping("/system/main")
     public String main(ModelMap mmap)
     {
-        mmap.put("version", RuoYiConfig.getVersion());
+        mmap.put("version", NetEaseConfig.getVersion());
         return "main";
     }
 

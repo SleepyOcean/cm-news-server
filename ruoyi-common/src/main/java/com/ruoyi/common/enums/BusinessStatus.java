@@ -1,9 +1,9 @@
-package com.ruoyi.common.enums;
+package com.netease.common.enums;
 
 /**
  * 操作状态
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public enum BusinessStatus
 {

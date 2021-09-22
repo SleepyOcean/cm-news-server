@@ -1,17 +1,18 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.List;
+import com.netease.common.core.text.Convert;
+import com.netease.system.domain.SysLogininfor;
+import com.netease.system.mapper.SysLogininforMapper;
+import com.netease.system.service.ISysLogininforService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.system.domain.SysLogininfor;
-import com.ruoyi.system.mapper.SysLogininforMapper;
-import com.ruoyi.system.service.ISysLogininforService;
+
+import java.util.List;
 
 /**
  * 系统访问日志情况信息 服务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysLogininforServiceImpl implements ISysLogininforService

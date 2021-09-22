@@ -1,12 +1,13 @@
-package com.ruoyi.quartz.mapper;
+package com.netease.quartz.mapper;
 
-import com.ruoyi.quartz.domain.SysJob;
+import com.netease.quartz.domain.SysJob;
+
 import java.util.List;
 
 /**
  * 调度任务信息 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public interface SysJobMapper
 {

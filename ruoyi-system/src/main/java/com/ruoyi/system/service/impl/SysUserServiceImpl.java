@@ -1,37 +1,34 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.netease.common.annotation.DataScope;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.security.Md5Utils;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.system.domain.SysPost;
+import com.netease.system.domain.SysUserPost;
+import com.netease.system.domain.SysUserRole;
+import com.netease.system.mapper.*;
+import com.netease.system.service.ISysConfigService;
+import com.netease.system.service.ISysUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.ruoyi.common.annotation.DataScope;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.security.Md5Utils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.system.domain.SysPost;
-import com.ruoyi.system.domain.SysUserPost;
-import com.ruoyi.system.domain.SysUserRole;
-import com.ruoyi.system.mapper.SysPostMapper;
-import com.ruoyi.system.mapper.SysRoleMapper;
-import com.ruoyi.system.mapper.SysUserMapper;
-import com.ruoyi.system.mapper.SysUserPostMapper;
-import com.ruoyi.system.mapper.SysUserRoleMapper;
-import com.ruoyi.system.service.ISysConfigService;
-import com.ruoyi.system.service.ISysUserService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 用户 业务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysUserServiceImpl implements ISysUserService

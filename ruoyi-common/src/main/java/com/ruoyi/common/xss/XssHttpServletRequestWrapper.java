@@ -1,13 +1,14 @@
-package com.ruoyi.common.xss;
+package com.netease.common.xss;
+
+import com.netease.common.utils.html.EscapeUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
-import com.ruoyi.common.utils.html.EscapeUtil;
 
 /**
  * XSS过滤处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper
 {

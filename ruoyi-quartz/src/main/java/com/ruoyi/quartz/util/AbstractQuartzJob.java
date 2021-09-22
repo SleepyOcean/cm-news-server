@@ -1,25 +1,26 @@
-package com.ruoyi.quartz.util;
+package com.netease.quartz.util;
 
-import java.util.Date;
+import com.netease.common.constant.Constants;
+import com.netease.common.constant.ScheduleConstants;
+import com.netease.common.utils.ExceptionUtil;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.bean.BeanUtils;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.quartz.domain.SysJob;
+import com.netease.quartz.domain.SysJobLog;
+import com.netease.quartz.service.ISysJobLogService;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.constant.ScheduleConstants;
-import com.ruoyi.common.utils.ExceptionUtil;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.bean.BeanUtils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.quartz.domain.SysJob;
-import com.ruoyi.quartz.domain.SysJobLog;
-import com.ruoyi.quartz.service.ISysJobLogService;
+
+import java.util.Date;
 
 /**
  * 抽象quartz调用
  *
- * @author ruoyi
+ * @author netease
  */
 public abstract class AbstractQuartzJob implements Job
 {

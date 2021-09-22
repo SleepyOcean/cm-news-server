@@ -1,27 +1,28 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.PostConstruct;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.domain.Ztree;
+import com.netease.common.core.domain.entity.SysDictData;
+import com.netease.common.core.domain.entity.SysDictType;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.DictUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.system.mapper.SysDictDataMapper;
+import com.netease.system.mapper.SysDictTypeMapper;
+import com.netease.system.service.ISysDictTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.domain.entity.SysDictData;
-import com.ruoyi.common.core.domain.entity.SysDictType;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.DictUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.mapper.SysDictDataMapper;
-import com.ruoyi.system.mapper.SysDictTypeMapper;
-import com.ruoyi.system.service.ISysDictTypeService;
+
+import javax.annotation.PostConstruct;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 字典 业务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysDictTypeServiceImpl implements ISysDictTypeService

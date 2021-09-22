@@ -1,9 +1,9 @@
-package com.ruoyi.common.core.domain;
+package com.netease.common.core.domain;
 
 /**
  * Tree基类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class TreeEntity extends BaseEntity
 {

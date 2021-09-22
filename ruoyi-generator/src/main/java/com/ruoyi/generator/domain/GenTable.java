@@ -1,17 +1,18 @@
-package com.ruoyi.generator.domain;
+package com.netease.generator.domain;
 
-import java.util.List;
+import com.netease.common.constant.GenConstants;
+import com.netease.common.core.domain.BaseEntity;
+import com.netease.common.utils.StringUtils;
+import org.apache.commons.lang3.ArrayUtils;
+
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
-import org.apache.commons.lang3.ArrayUtils;
-import com.ruoyi.common.constant.GenConstants;
-import com.ruoyi.common.core.domain.BaseEntity;
-import com.ruoyi.common.utils.StringUtils;
+import java.util.List;
 
 /**
  * 业务表 gen_table
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class GenTable extends BaseEntity
 {

@@ -1,6 +1,10 @@
-package com.ruoyi.framework.web.exception;
+package com.netease.framework.web.exception;
 
-import javax.servlet.http.HttpServletRequest;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.exception.DemoModeException;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.ServletUtils;
+import com.netease.common.utils.security.PermissionUtils;
 import org.apache.shiro.authz.AuthorizationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,16 +13,13 @@ import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.ModelAndView;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.exception.DemoModeException;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.common.utils.security.PermissionUtils;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 全局异常处理器
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler

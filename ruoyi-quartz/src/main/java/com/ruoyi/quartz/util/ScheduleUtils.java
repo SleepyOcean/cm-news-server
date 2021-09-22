@@ -1,25 +1,15 @@
-package com.ruoyi.quartz.util;
+package com.netease.quartz.util;
 
-import org.quartz.CronScheduleBuilder;
-import org.quartz.CronTrigger;
-import org.quartz.Job;
-import org.quartz.JobBuilder;
-import org.quartz.JobDetail;
-import org.quartz.JobKey;
-import org.quartz.Scheduler;
-import org.quartz.SchedulerException;
-import org.quartz.TriggerBuilder;
-import org.quartz.TriggerKey;
-import com.ruoyi.common.constant.ScheduleConstants;
-import com.ruoyi.common.exception.job.TaskException;
-import com.ruoyi.common.exception.job.TaskException.Code;
-import com.ruoyi.quartz.domain.SysJob;
+import com.netease.common.constant.ScheduleConstants;
+import com.netease.common.exception.job.TaskException;
+import com.netease.common.exception.job.TaskException.Code;
+import com.netease.quartz.domain.SysJob;
+import org.quartz.*;
 
 /**
  * 定时任务工具类
- * 
- * @author ruoyi
  *
+ * @author netease
  */
 public class ScheduleUtils
 {

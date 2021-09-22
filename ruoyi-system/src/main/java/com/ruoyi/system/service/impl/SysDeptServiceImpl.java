@@ -1,30 +1,31 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import com.netease.common.annotation.DataScope;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.domain.Ztree;
+import com.netease.common.core.domain.entity.SysDept;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.system.mapper.SysDeptMapper;
+import com.netease.system.service.ISysDeptService;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.ruoyi.common.annotation.DataScope;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.domain.entity.SysDept;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.system.mapper.SysDeptMapper;
-import com.ruoyi.system.service.ISysDeptService;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * 部门管理 服务实现
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysDeptServiceImpl implements ISysDeptService

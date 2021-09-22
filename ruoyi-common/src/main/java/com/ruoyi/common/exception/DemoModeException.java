@@ -1,9 +1,9 @@
-package com.ruoyi.common.exception;
+package com.netease.common.exception;
 
 /**
  * 演示模式异常
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class DemoModeException extends RuntimeException
 {

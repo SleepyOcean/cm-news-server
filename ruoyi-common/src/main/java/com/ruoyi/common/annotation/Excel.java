@@ -1,4 +1,4 @@
-package com.ruoyi.common.annotation;
+package com.netease.common.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,8 +8,8 @@ import java.math.BigDecimal;
 
 /**
  * 自定义导出Excel数据注解
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)

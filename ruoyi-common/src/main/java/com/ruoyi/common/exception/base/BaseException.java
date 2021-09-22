@@ -1,12 +1,12 @@
-package com.ruoyi.common.exception.base;
+package com.netease.common.exception.base;
 
-import com.ruoyi.common.utils.MessageUtils;
-import com.ruoyi.common.utils.StringUtils;
+import com.netease.common.utils.MessageUtils;
+import com.netease.common.utils.StringUtils;
 
 /**
  * 基础异常
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class BaseException extends RuntimeException
 {

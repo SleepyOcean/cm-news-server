@@ -1,14 +1,15 @@
-package com.ruoyi.framework.manager;
+package com.netease.framework.manager;
+
+import com.netease.common.utils.Threads;
+import com.netease.common.utils.spring.SpringUtils;
 
 import java.util.TimerTask;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import com.ruoyi.common.utils.Threads;
-import com.ruoyi.common.utils.spring.SpringUtils;
 
 /**
  * 异步任务管理器
- * 
+ *
  * @author liuhulu
  */
 public class AsyncManager

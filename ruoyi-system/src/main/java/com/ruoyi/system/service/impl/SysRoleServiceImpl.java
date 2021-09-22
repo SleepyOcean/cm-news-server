@@ -1,35 +1,32 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import com.netease.common.annotation.DataScope;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.system.domain.SysRoleDept;
+import com.netease.system.domain.SysRoleMenu;
+import com.netease.system.domain.SysUserRole;
+import com.netease.system.mapper.SysRoleDeptMapper;
+import com.netease.system.mapper.SysRoleMapper;
+import com.netease.system.mapper.SysRoleMenuMapper;
+import com.netease.system.mapper.SysUserRoleMapper;
+import com.netease.system.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.ruoyi.common.annotation.DataScope;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.system.domain.SysRoleDept;
-import com.ruoyi.system.domain.SysRoleMenu;
-import com.ruoyi.system.domain.SysUserRole;
-import com.ruoyi.system.mapper.SysRoleDeptMapper;
-import com.ruoyi.system.mapper.SysRoleMapper;
-import com.ruoyi.system.mapper.SysRoleMenuMapper;
-import com.ruoyi.system.mapper.SysUserRoleMapper;
-import com.ruoyi.system.service.ISysRoleService;
+
+import java.util.*;
 
 /**
  * 角色 业务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysRoleServiceImpl implements ISysRoleService

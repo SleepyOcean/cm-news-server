@@ -1,5 +1,7 @@
-package com.ruoyi.framework.aspectj;
+package com.netease.framework.aspectj;
 
+import com.netease.common.annotation.DataSource;
+import com.netease.common.config.datasource.DynamicDataSourceContextHolder;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -7,13 +9,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import com.ruoyi.common.annotation.DataSource;
-import com.ruoyi.common.config.datasource.DynamicDataSourceContextHolder;
 
 /**
  * 多数据源处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Aspect
 @Order(1)

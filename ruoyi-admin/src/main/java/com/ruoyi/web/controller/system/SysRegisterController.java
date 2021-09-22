@@ -1,21 +1,21 @@
-package com.ruoyi.web.controller.system;
+package com.netease.web.controller.system;
 
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.framework.shiro.service.SysRegisterService;
+import com.netease.system.service.ISysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.framework.shiro.service.SysRegisterService;
-import com.ruoyi.system.service.ISysConfigService;
 
 /**
  * 注册验证
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 public class SysRegisterController extends BaseController

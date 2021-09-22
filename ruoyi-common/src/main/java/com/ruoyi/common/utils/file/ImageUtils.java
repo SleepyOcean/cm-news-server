@@ -1,4 +1,11 @@
-package com.ruoyi.common.utils.file;
+package com.netease.common.utils.file;
+
+import com.netease.common.config.NetEaseConfig;
+import com.netease.common.constant.Constants;
+import com.netease.common.utils.StringUtils;
+import org.apache.poi.util.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -7,17 +14,11 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Arrays;
-import org.apache.poi.util.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import com.ruoyi.common.config.RuoYiConfig;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 图片处理工具类
  *
- * @author ruoyi
+ * @author netease
  */
 public class ImageUtils
 {
@@ -81,7 +82,7 @@ public class ImageUtils
             else
             {
                 // 本机地址
-                String localPath = RuoYiConfig.getProfile();
+                String localPath = NetEaseConfig.getProfile();
                 String downloadPath = localPath + StringUtils.substringAfter(url, Constants.RESOURCE_PREFIX);
                 in = new FileInputStream(downloadPath);
             }

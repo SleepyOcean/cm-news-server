@@ -1,17 +1,18 @@
-package com.ruoyi.quartz.util;
+package com.netease.quartz.util;
+
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.quartz.domain.SysJob;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.LinkedList;
 import java.util.List;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.quartz.domain.SysJob;
 
 /**
  * 任务执行工具
  *
- * @author ruoyi
+ * @author netease
  */
 public class JobInvokeUtil
 {

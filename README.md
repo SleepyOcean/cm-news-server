@@ -6,10 +6,13 @@
 
 若依是一套全部开源的快速开发平台，毫无保留给个人及企业免费使用。
 
-* 前后端分离版本，请移步[RuoYi-Vue](https://gitee.com/y_project/RuoYi-Vue)，微服务版本，请移步[RuoYi-Cloud](https://gitee.com/y_project/RuoYi-Cloud)
+*
+前后端分离版本，请移步[NetEase-Vue](https://gitee.com/y_project/NetEase-Vue)，微服务版本，请移步[NetEase-Cloud](https://gitee.com/y_project/NetEase-Cloud)
 * 感谢 [hplus](https://gitee.com/hplus_admin/hplus) 后台主题 UI 框架。
-* 阿里云折扣场：[点我进入](http://aly.ruoyi.vip)，腾讯云秒杀场：[点我进入](http://txy.ruoyi.vip)&nbsp;&nbsp;
-* 阿里云优惠券：[点我领取](https://www.aliyun.com/minisite/goods?userCode=brki8iof&share_source=copy_link)，腾讯云优惠券：[点我领取](https://cloud.tencent.com/redirect.php?redirect=1025&cps_key=198c8df2ed259157187173bc7f4f32fd&from=console)&nbsp;&nbsp;
+* 阿里云折扣场：[点我进入](http://aly.netease.vip)，腾讯云秒杀场：[点我进入](http://txy.netease.vip)&nbsp;&nbsp;
+*
+阿里云优惠券：[点我领取](https://www.aliyun.com/minisite/goods?userCode=brki8iof&share_source=copy_link)，腾讯云优惠券：[点我领取](https://cloud.tencent.com/redirect.php?redirect=1025&cps_key=198c8df2ed259157187173bc7f4f32fd&from=console)&nbsp;&nbsp
+;
 
 ## 内置功能
 
@@ -37,8 +40,8 @@
 - admin/admin123  
 - 陆陆续续收到一些打赏，为了更好的体验已用于演示服务器升级。谢谢各位小伙伴。
 
-演示地址：http://ruoyi.vip  
-文档地址：http://doc.ruoyi.vip
+演示地址：http://netease.vip  
+文档地址：http://doc.netease.vip
 
 ## 演示图
 

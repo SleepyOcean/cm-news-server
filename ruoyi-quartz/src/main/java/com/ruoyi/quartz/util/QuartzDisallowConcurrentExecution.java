@@ -1,14 +1,13 @@
-package com.ruoyi.quartz.util;
+package com.netease.quartz.util;
 
+import com.netease.quartz.domain.SysJob;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.JobExecutionContext;
-import com.ruoyi.quartz.domain.SysJob;
 
 /**
  * 定时任务处理（禁止并发执行）
- * 
- * @author ruoyi
  *
+ * @author netease
  */
 @DisallowConcurrentExecution
 public class QuartzDisallowConcurrentExecution extends AbstractQuartzJob

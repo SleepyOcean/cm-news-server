@@ -1,6 +1,17 @@
-package com.ruoyi.web.controller.monitor;
+package com.netease.web.controller.monitor;
 
-import java.util.List;
+import com.netease.common.annotation.Log;
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.page.TableDataInfo;
+import com.netease.common.core.text.Convert;
+import com.netease.common.enums.BusinessType;
+import com.netease.common.enums.OnlineStatus;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.framework.shiro.session.OnlineSession;
+import com.netease.framework.shiro.session.OnlineSessionDAO;
+import com.netease.system.domain.SysUserOnline;
+import com.netease.system.service.ISysUserOnlineService;
 import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,23 +20,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.ruoyi.common.annotation.Log;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.page.TableDataInfo;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.enums.BusinessType;
-import com.ruoyi.common.enums.OnlineStatus;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.framework.shiro.session.OnlineSession;
-import com.ruoyi.framework.shiro.session.OnlineSessionDAO;
-import com.ruoyi.system.domain.SysUserOnline;
-import com.ruoyi.system.service.ISysUserOnlineService;
+
+import java.util.List;
 
 /**
  * 在线用户监控
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/monitor/online")

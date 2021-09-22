@@ -1,13 +1,14 @@
-package com.ruoyi.generator.util;
+package com.netease.generator.util;
+
+import com.netease.common.constant.Constants;
+import org.apache.velocity.app.Velocity;
 
 import java.util.Properties;
-import org.apache.velocity.app.Velocity;
-import com.ruoyi.common.constant.Constants;
 
 /**
  * VelocityEngine工厂
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class VelocityInitializer
 {

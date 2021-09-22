@@ -1,9 +1,9 @@
-package com.ruoyi.common.constant;
+package com.netease.common.constant;
 
 /**
  * 任务调度通用常量
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class ScheduleConstants
 {

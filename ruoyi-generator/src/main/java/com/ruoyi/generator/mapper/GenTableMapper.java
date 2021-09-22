@@ -1,15 +1,15 @@
-package com.ruoyi.generator.mapper;
+package com.netease.generator.mapper;
+
+import com.netease.generator.domain.GenTable;
 
 import java.util.List;
-import com.ruoyi.generator.domain.GenTable;
 
 /**
  * 业务 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface GenTableMapper
-{
+public interface GenTableMapper {
     /**
      * 查询业务列表
      * 

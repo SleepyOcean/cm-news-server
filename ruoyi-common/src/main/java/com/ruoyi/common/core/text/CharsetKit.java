@@ -1,13 +1,14 @@
-package com.ruoyi.common.core.text;
+package com.netease.common.core.text;
+
+import com.netease.common.utils.StringUtils;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 字符集工具类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class CharsetKit
 {

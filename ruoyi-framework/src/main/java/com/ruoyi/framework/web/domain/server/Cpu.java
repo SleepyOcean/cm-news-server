@@ -1,11 +1,11 @@
-package com.ruoyi.framework.web.domain.server;
+package com.netease.framework.web.domain.server;
 
-import com.ruoyi.common.utils.Arith;
+import com.netease.common.utils.Arith;
 
 /**
  * CPU相关信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class Cpu
 {

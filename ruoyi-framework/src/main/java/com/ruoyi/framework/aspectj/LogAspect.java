@@ -1,9 +1,16 @@
-package com.ruoyi.framework.aspectj;
+package com.netease.framework.aspectj;
 
-import java.util.Collection;
-import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.support.spring.PropertyPreFilters;
+import com.netease.common.annotation.Log;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.enums.BusinessStatus;
+import com.netease.common.utils.ServletUtils;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.framework.manager.AsyncManager;
+import com.netease.framework.manager.factory.AsyncFactory;
+import com.netease.system.domain.SysOperLog;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -14,22 +21,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.multipart.MultipartFile;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.support.spring.PropertyPreFilters;
-import com.ruoyi.common.annotation.Log;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.enums.BusinessStatus;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.framework.manager.AsyncManager;
-import com.ruoyi.framework.manager.factory.AsyncFactory;
-import com.ruoyi.system.domain.SysOperLog;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * 操作日志记录处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Aspect
 @Component
@@ -41,7 +42,7 @@ public class LogAspect
     public static final String[] EXCLUDE_PROPERTIES = { "password", "oldPassword", "newPassword", "confirmPassword" };
 
     // 配置织入点
-    @Pointcut("@annotation(com.ruoyi.common.annotation.Log)")
+    @Pointcut("@annotation(com.netease.common.annotation.Log)")
     public void logPointCut()
     {
     }

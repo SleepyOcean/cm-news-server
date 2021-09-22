@@ -1,24 +1,25 @@
-package com.ruoyi.framework.shiro.web.filter.online;
+package com.netease.framework.shiro.web.filter.online;
 
-import java.io.IOException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import com.netease.common.constant.ShiroConstants;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.enums.OnlineStatus;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.framework.shiro.session.OnlineSession;
+import com.netease.framework.shiro.session.OnlineSessionDAO;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Value;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.enums.OnlineStatus;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.framework.shiro.session.OnlineSession;
-import com.ruoyi.framework.shiro.session.OnlineSessionDAO;
+
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import java.io.IOException;
 
 /**
  * 自定义访问控制
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class OnlineSessionFilter extends AccessControlFilter
 {

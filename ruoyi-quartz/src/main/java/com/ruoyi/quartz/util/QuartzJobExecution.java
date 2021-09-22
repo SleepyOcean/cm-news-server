@@ -1,13 +1,12 @@
-package com.ruoyi.quartz.util;
+package com.netease.quartz.util;
 
+import com.netease.quartz.domain.SysJob;
 import org.quartz.JobExecutionContext;
-import com.ruoyi.quartz.domain.SysJob;
 
 /**
  * 定时任务处理（允许并发执行）
- * 
- * @author ruoyi
  *
+ * @author netease
  */
 public class QuartzJobExecution extends AbstractQuartzJob
 {

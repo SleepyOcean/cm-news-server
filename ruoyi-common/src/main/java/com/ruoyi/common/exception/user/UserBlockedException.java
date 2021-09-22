@@ -1,9 +1,9 @@
-package com.ruoyi.common.exception.user;
+package com.netease.common.exception.user;
 
 /**
  * 用户锁定异常类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class UserBlockedException extends UserException
 {

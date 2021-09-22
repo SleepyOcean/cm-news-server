@@ -1,9 +1,9 @@
-package com.ruoyi.common.exception;
+package com.netease.common.exception;
 
 /**
  * 工具类异常
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class UtilException extends RuntimeException
 {

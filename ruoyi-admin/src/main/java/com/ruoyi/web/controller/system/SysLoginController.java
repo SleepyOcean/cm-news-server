@@ -1,7 +1,10 @@
-package com.ruoyi.web.controller.system;
+package com.netease.web.controller.system;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.utils.ServletUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.framework.web.service.ConfigService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -13,16 +16,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.framework.web.service.ConfigService;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 登录验证
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 public class SysLoginController extends BaseController

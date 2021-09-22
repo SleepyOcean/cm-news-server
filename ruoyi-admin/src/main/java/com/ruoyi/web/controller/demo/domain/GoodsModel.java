@@ -1,16 +1,16 @@
-package com.ruoyi.web.controller.demo.domain;
+package com.netease.web.controller.demo.domain;
 
-import java.util.Date;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
+import java.util.Date;
+
 /**
  * 商品测试信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public class GoodsModel
-{
+public class GoodsModel {
     /**
      * 商品名称
      */

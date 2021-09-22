@@ -1,12 +1,12 @@
-package com.ruoyi.common.config.datasource;
+package com.netease.common.config.datasource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * 数据源切换处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class DynamicDataSourceContextHolder
 {

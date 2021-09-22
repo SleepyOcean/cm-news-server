@@ -1,14 +1,15 @@
-package com.ruoyi.framework.datasource;
+package com.netease.framework.datasource;
 
-import java.util.Map;
-import javax.sql.DataSource;
+import com.netease.common.config.datasource.DynamicDataSourceContextHolder;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
-import com.ruoyi.common.config.datasource.DynamicDataSourceContextHolder;
+
+import javax.sql.DataSource;
+import java.util.Map;
 
 /**
  * 动态数据源
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class DynamicDataSource extends AbstractRoutingDataSource
 {

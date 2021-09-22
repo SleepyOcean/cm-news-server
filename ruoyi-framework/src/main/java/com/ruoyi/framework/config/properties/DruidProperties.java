@@ -1,13 +1,13 @@
-package com.ruoyi.framework.config.properties;
+package com.netease.framework.config.properties;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import com.alibaba.druid.pool.DruidDataSource;
 
 /**
  * druid 配置属性
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Configuration
 public class DruidProperties

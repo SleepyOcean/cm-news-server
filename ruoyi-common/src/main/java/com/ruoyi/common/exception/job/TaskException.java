@@ -1,9 +1,9 @@
-package com.ruoyi.common.exception.job;
+package com.netease.common.exception.job;
 
 /**
  * 计划策略异常
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class TaskException extends Exception
 {

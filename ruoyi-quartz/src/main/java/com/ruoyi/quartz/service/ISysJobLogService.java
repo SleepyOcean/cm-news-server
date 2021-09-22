@@ -1,15 +1,15 @@
-package com.ruoyi.quartz.service;
+package com.netease.quartz.service;
+
+import com.netease.quartz.domain.SysJobLog;
 
 import java.util.List;
-import com.ruoyi.quartz.domain.SysJobLog;
 
 /**
  * 定时任务调度日志信息信息 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface ISysJobLogService
-{
+public interface ISysJobLogService {
     /**
      * 获取quartz调度器日志的计划任务
      * 

@@ -1,16 +1,16 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.system.domain.SysUserRole;
 
 import java.util.List;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.system.domain.SysUserRole;
 
 /**
  * 用户 业务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface ISysUserService
-{
+public interface ISysUserService {
     /**
      * 根据条件分页查询用户列表
      * 

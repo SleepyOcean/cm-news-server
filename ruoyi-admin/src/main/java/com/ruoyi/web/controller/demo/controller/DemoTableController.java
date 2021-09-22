@@ -1,33 +1,30 @@
-package com.ruoyi.web.controller.demo.controller;
+package com.netease.web.controller.demo.controller;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.netease.common.annotation.Excel;
+import com.netease.common.annotation.Excel.ColumnType;
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.page.PageDomain;
+import com.netease.common.core.page.TableDataInfo;
+import com.netease.common.core.page.TableSupport;
+import com.netease.common.core.text.Convert;
+import com.netease.common.utils.DateUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.poi.ExcelUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.annotation.Excel.ColumnType;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.page.PageDomain;
-import com.ruoyi.common.core.page.TableDataInfo;
-import com.ruoyi.common.core.page.TableSupport;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.poi.ExcelUtil;
+
+import java.util.*;
 
 /**
  * 表格相关
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/demo/table")

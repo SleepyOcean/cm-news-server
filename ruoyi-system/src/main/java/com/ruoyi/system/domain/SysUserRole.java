@@ -1,12 +1,12 @@
-package com.ruoyi.system.domain;
+package com.netease.system.domain;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * 用户和角色关联 sys_user_role
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class SysUserRole
 {

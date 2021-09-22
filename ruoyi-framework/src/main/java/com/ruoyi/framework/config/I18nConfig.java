@@ -1,6 +1,5 @@
-package com.ruoyi.framework.config;
+package com.netease.framework.config;
 
-import java.util.Locale;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -9,14 +8,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
+import java.util.Locale;
+
 /**
  * 资源文件配置加载
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Configuration
-public class I18nConfig implements WebMvcConfigurer
-{
+public class I18nConfig implements WebMvcConfigurer {
     @Bean
     public LocaleResolver localeResolver()
     {

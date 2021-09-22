@@ -1,17 +1,18 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.List;
+import com.netease.common.core.text.Convert;
+import com.netease.system.domain.SysNotice;
+import com.netease.system.mapper.SysNoticeMapper;
+import com.netease.system.service.ISysNoticeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.system.domain.SysNotice;
-import com.ruoyi.system.mapper.SysNoticeMapper;
-import com.ruoyi.system.service.ISysNoticeService;
+
+import java.util.List;
 
 /**
  * 公告 服务层实现
- * 
- * @author ruoyi
+ *
+ * @author netease
  * @date 2018-06-25
  */
 @Service

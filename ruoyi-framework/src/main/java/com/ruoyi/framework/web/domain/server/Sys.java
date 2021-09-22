@@ -1,9 +1,9 @@
-package com.ruoyi.framework.web.domain.server;
+package com.netease.framework.web.domain.server;
 
 /**
  * 系统相关信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class Sys
 {

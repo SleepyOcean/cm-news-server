@@ -1,14 +1,15 @@
-package com.ruoyi.quartz.service;
+package com.netease.quartz.service;
+
+import com.netease.common.exception.job.TaskException;
+import com.netease.quartz.domain.SysJob;
+import org.quartz.SchedulerException;
 
 import java.util.List;
-import org.quartz.SchedulerException;
-import com.ruoyi.common.exception.job.TaskException;
-import com.ruoyi.quartz.domain.SysJob;
 
 /**
  * 定时任务调度信息信息 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public interface ISysJobService
 {

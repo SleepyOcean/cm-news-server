@@ -1,9 +1,9 @@
-package com.ruoyi.common.enums;
+package com.netease.common.enums;
 
 /**
  * 用户状态
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public enum UserStatus
 {

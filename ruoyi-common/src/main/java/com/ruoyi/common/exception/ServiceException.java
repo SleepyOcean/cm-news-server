@@ -1,9 +1,9 @@
-package com.ruoyi.common.exception;
+package com.netease.common.exception;
 
 /**
  * 业务异常
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public final class ServiceException extends RuntimeException
 {

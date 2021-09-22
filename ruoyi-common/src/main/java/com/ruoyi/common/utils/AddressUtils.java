@@ -1,16 +1,16 @@
-package com.ruoyi.common.utils;
+package com.netease.common.utils;
 
+import com.alibaba.fastjson.JSONObject;
+import com.netease.common.config.NetEaseConfig;
+import com.netease.common.constant.Constants;
+import com.netease.common.utils.http.HttpUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.alibaba.fastjson.JSONObject;
-import com.ruoyi.common.config.RuoYiConfig;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.utils.http.HttpUtils;
 
 /**
  * 获取地址类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class AddressUtils
 {
@@ -26,17 +26,13 @@ public class AddressUtils
     {
         String address = UNKNOWN;
         // 内网不查询
-        if (IpUtils.internalIp(ip))
-        {
+        if (IpUtils.internalIp(ip)) {
             return "内网IP";
         }
-        if (RuoYiConfig.isAddressEnabled())
-        {
-            try
-            {
+        if (NetEaseConfig.isAddressEnabled()) {
+            try {
                 String rspStr = HttpUtils.sendGet(IP_URL, "ip=" + ip + "&json=true", Constants.GBK);
-                if (StringUtils.isEmpty(rspStr))
-                {
+                if (StringUtils.isEmpty(rspStr)) {
                     log.error("获取地理位置异常 {}", ip);
                     return UNKNOWN;
                 }

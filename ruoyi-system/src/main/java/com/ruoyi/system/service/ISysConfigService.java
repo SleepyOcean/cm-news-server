@@ -1,15 +1,15 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.system.domain.SysConfig;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysConfig;
 
 /**
  * 参数配置 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface ISysConfigService
-{
+public interface ISysConfigService {
     /**
      * 查询参数配置信息
      * 

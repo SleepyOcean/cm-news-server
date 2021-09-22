@@ -1,18 +1,19 @@
-package com.ruoyi.framework.shiro.web.filter.captcha;
+package com.netease.framework.shiro.web.filter.captcha;
+
+import com.google.code.kaptcha.Constants;
+import com.netease.common.constant.ShiroConstants;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
+import org.apache.shiro.web.filter.AccessControlFilter;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
-import org.apache.shiro.web.filter.AccessControlFilter;
-import com.google.code.kaptcha.Constants;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 验证码过滤器
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class CaptchaValidateFilter extends AccessControlFilter
 {

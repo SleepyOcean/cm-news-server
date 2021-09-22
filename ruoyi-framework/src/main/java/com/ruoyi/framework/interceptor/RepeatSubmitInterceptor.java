@@ -1,20 +1,21 @@
-package com.ruoyi.framework.interceptor;
+package com.netease.framework.interceptor;
 
-import java.lang.reflect.Method;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.netease.common.annotation.RepeatSubmit;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.json.JSON;
+import com.netease.common.utils.ServletUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-import com.ruoyi.common.annotation.RepeatSubmit;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.json.JSON;
-import com.ruoyi.common.utils.ServletUtils;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.Method;
 
 /**
  * 防止重复提交拦截器
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Component
 public abstract class RepeatSubmitInterceptor extends HandlerInterceptorAdapter

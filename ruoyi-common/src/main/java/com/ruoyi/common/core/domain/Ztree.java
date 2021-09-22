@@ -1,11 +1,11 @@
-package com.ruoyi.common.core.domain;
+package com.netease.common.core.domain;
 
 import java.io.Serializable;
 
 /**
  * Ztree树结构实体类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class Ztree implements Serializable
 {

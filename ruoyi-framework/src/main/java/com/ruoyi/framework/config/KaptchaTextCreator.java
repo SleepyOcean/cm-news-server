@@ -1,13 +1,14 @@
-package com.ruoyi.framework.config;
+package com.netease.framework.config;
+
+import com.google.code.kaptcha.text.impl.DefaultTextCreator;
 
 import java.security.SecureRandom;
 import java.util.Random;
-import com.google.code.kaptcha.text.impl.DefaultTextCreator;
 
 /**
  * 验证码文本生成器
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class KaptchaTextCreator extends DefaultTextCreator
 {

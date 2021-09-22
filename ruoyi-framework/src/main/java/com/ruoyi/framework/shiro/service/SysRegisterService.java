@@ -1,24 +1,24 @@
-package com.ruoyi.framework.shiro.service;
+package com.netease.framework.shiro.service;
 
+import com.netease.common.constant.Constants;
+import com.netease.common.constant.ShiroConstants;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.utils.DateUtils;
+import com.netease.common.utils.MessageUtils;
+import com.netease.common.utils.ServletUtils;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.framework.manager.AsyncManager;
+import com.netease.framework.manager.factory.AsyncFactory;
+import com.netease.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.MessageUtils;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.framework.manager.AsyncManager;
-import com.ruoyi.framework.manager.factory.AsyncFactory;
-import com.ruoyi.system.service.ISysUserService;
 
 /**
  * 注册校验方法
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Component
 public class SysRegisterService

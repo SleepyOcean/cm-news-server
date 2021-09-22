@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysRoleMenu;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysRoleMenu;
 
 /**
  * 角色与菜单关联表 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysRoleMenuMapper
-{
+public interface SysRoleMenuMapper {
     /**
      * 通过角色ID删除角色和菜单关联
      * 

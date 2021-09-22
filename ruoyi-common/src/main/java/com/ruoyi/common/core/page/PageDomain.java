@@ -1,11 +1,11 @@
-package com.ruoyi.common.core.page;
+package com.netease.common.core.page;
 
-import com.ruoyi.common.utils.StringUtils;
+import com.netease.common.utils.StringUtils;
 
 /**
  * 分页数据
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class PageDomain
 {

@@ -1,34 +1,30 @@
-package com.ruoyi.web.controller.system;
+package com.netease.web.controller.system;
 
+import com.netease.common.annotation.Log;
+import com.netease.common.config.NetEaseConfig;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.enums.BusinessType;
+import com.netease.common.utils.DateUtils;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.file.FileUploadUtils;
+import com.netease.framework.shiro.service.SysPasswordService;
+import com.netease.system.service.ISysUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import com.ruoyi.common.annotation.Log;
-import com.ruoyi.common.config.RuoYiConfig;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.enums.BusinessType;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.file.FileUploadUtils;
-import com.ruoyi.framework.shiro.service.SysPasswordService;
-import com.ruoyi.system.service.ISysUserService;
 
 /**
  * 个人信息 业务处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/system/user/profile")
@@ -168,7 +164,7 @@ public class SysProfileController extends BaseController
         {
             if (!file.isEmpty())
             {
-                String avatar = FileUploadUtils.upload(RuoYiConfig.getAvatarPath(), file);
+                String avatar = FileUploadUtils.upload(NetEaseConfig.getAvatarPath(), file);
                 currentUser.setAvatar(avatar);
                 if (userService.updateUserInfo(currentUser) > 0)
                 {

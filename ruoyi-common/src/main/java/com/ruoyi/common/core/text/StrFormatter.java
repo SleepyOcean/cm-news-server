@@ -1,11 +1,11 @@
-package com.ruoyi.common.core.text;
+package com.netease.common.core.text;
 
-import com.ruoyi.common.utils.StringUtils;
+import com.netease.common.utils.StringUtils;
 
 /**
  * 字符串格式化
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class StrFormatter
 {

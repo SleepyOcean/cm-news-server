@@ -1,19 +1,20 @@
-package com.ruoyi.framework.web.service;
+package com.netease.framework.web.service;
 
-import java.beans.BeanInfo;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
+import com.netease.common.utils.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.utils.StringUtils;
+
+import java.beans.BeanInfo;
+import java.beans.Introspector;
+import java.beans.PropertyDescriptor;
 
 /**
- * RuoYi首创 js调用 thymeleaf 实现按钮权限可见性
- * 
- * @author ruoyi
+ * NetEase首创 js调用 thymeleaf 实现按钮权限可见性
+ *
+ * @author netease
  */
 @Service("permission")
 public class PermissionService

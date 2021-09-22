@@ -1,11 +1,20 @@
-package com.ruoyi.framework.config;
+package com.netease.framework.config;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import javax.servlet.Filter;
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.netease.common.constant.Constants;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.security.CipherUtils;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.framework.shiro.realm.UserRealm;
+import com.netease.framework.shiro.session.OnlineSessionDAO;
+import com.netease.framework.shiro.session.OnlineSessionFactory;
+import com.netease.framework.shiro.web.filter.LogoutFilter;
+import com.netease.framework.shiro.web.filter.captcha.CaptchaValidateFilter;
+import com.netease.framework.shiro.web.filter.kickout.KickoutSessionFilter;
+import com.netease.framework.shiro.web.filter.online.OnlineSessionFilter;
+import com.netease.framework.shiro.web.filter.sync.SyncOnlineSessionFilter;
+import com.netease.framework.shiro.web.session.OnlineWebSessionManager;
+import com.netease.framework.shiro.web.session.SpringSessionValidationScheduler;
 import org.apache.commons.io.IOUtils;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.codec.Base64;
@@ -21,26 +30,18 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.security.CipherUtils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.framework.shiro.realm.UserRealm;
-import com.ruoyi.framework.shiro.session.OnlineSessionDAO;
-import com.ruoyi.framework.shiro.session.OnlineSessionFactory;
-import com.ruoyi.framework.shiro.web.filter.LogoutFilter;
-import com.ruoyi.framework.shiro.web.filter.captcha.CaptchaValidateFilter;
-import com.ruoyi.framework.shiro.web.filter.kickout.KickoutSessionFilter;
-import com.ruoyi.framework.shiro.web.filter.online.OnlineSessionFilter;
-import com.ruoyi.framework.shiro.web.filter.sync.SyncOnlineSessionFilter;
-import com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager;
-import com.ruoyi.framework.shiro.web.session.SpringSessionValidationScheduler;
-import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+
+import javax.servlet.Filter;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * 权限配置加载
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Configuration
 public class ShiroConfig
@@ -135,7 +136,7 @@ public class ShiroConfig
     @Bean
     public EhCacheManager getEhCacheManager()
     {
-        net.sf.ehcache.CacheManager cacheManager = net.sf.ehcache.CacheManager.getCacheManager("ruoyi");
+        net.sf.ehcache.CacheManager cacheManager = net.sf.ehcache.CacheManager.getCacheManager("netease");
         EhCacheManager em = new EhCacheManager();
         if (StringUtils.isNull(cacheManager))
         {
@@ -277,7 +278,7 @@ public class ShiroConfig
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
         // 对静态资源设置匿名访问
         filterChainDefinitionMap.put("/favicon.ico**", "anon");
-        filterChainDefinitionMap.put("/ruoyi.png**", "anon");
+        filterChainDefinitionMap.put("/netease.png**", "anon");
         filterChainDefinitionMap.put("/html/**", "anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/docs/**", "anon");
@@ -285,7 +286,7 @@ public class ShiroConfig
         filterChainDefinitionMap.put("/img/**", "anon");
         filterChainDefinitionMap.put("/ajax/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
-        filterChainDefinitionMap.put("/ruoyi/**", "anon");
+        filterChainDefinitionMap.put("/netease/**", "anon");
         filterChainDefinitionMap.put("/captcha/captchaImage**", "anon");
         // 退出 logout地址，shiro去清除session
         filterChainDefinitionMap.put("/logout", "logout");

@@ -1,13 +1,13 @@
-package com.ruoyi.framework.web.service;
+package com.netease.framework.web.service;
 
+import com.netease.system.service.ISysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.system.service.ISysConfigService;
 
 /**
- * RuoYi首创 html调用 thymeleaf 实现参数管理
- * 
- * @author ruoyi
+ * NetEase首创 html调用 thymeleaf 实现参数管理
+ *
+ * @author netease
  */
 @Service("config")
 public class ConfigService

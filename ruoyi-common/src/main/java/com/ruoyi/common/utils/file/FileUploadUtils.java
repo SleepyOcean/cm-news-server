@@ -1,22 +1,23 @@
-package com.ruoyi.common.utils.file;
+package com.netease.common.utils.file;
+
+import com.netease.common.config.NetEaseConfig;
+import com.netease.common.constant.Constants;
+import com.netease.common.exception.file.FileNameLengthLimitExceededException;
+import com.netease.common.exception.file.FileSizeLimitExceededException;
+import com.netease.common.exception.file.InvalidExtensionException;
+import com.netease.common.utils.DateUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.common.utils.uuid.IdUtils;
+import org.apache.commons.io.FilenameUtils;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import org.apache.commons.io.FilenameUtils;
-import org.springframework.web.multipart.MultipartFile;
-import com.ruoyi.common.config.RuoYiConfig;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.exception.file.FileNameLengthLimitExceededException;
-import com.ruoyi.common.exception.file.FileSizeLimitExceededException;
-import com.ruoyi.common.exception.file.InvalidExtensionException;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.uuid.IdUtils;
 
 /**
  * 文件上传工具类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class FileUploadUtils
 {
@@ -33,7 +34,7 @@ public class FileUploadUtils
     /**
      * 默认上传的地址
      */
-    private static String defaultBaseDir = RuoYiConfig.getProfile();
+    private static String defaultBaseDir = NetEaseConfig.getProfile();
 
     public static void setDefaultBaseDir(String defaultBaseDir)
     {
@@ -143,7 +144,7 @@ public class FileUploadUtils
 
     public static final String getPathFileName(String uploadDir, String fileName) throws IOException
     {
-        int dirLastIndex = RuoYiConfig.getProfile().length() + 1;
+        int dirLastIndex = NetEaseConfig.getProfile().length() + 1;
         String currentDir = StringUtils.substring(uploadDir, dirLastIndex);
         String pathFileName = Constants.RESOURCE_PREFIX + "/" + currentDir + "/" + fileName;
         return pathFileName;

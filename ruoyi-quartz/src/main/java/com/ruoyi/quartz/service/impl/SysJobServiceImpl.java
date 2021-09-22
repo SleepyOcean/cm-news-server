@@ -1,7 +1,13 @@
-package com.ruoyi.quartz.service.impl;
+package com.netease.quartz.service.impl;
 
-import java.util.List;
-import javax.annotation.PostConstruct;
+import com.netease.common.constant.ScheduleConstants;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.job.TaskException;
+import com.netease.quartz.domain.SysJob;
+import com.netease.quartz.mapper.SysJobMapper;
+import com.netease.quartz.service.ISysJobService;
+import com.netease.quartz.util.CronUtils;
+import com.netease.quartz.util.ScheduleUtils;
 import org.quartz.JobDataMap;
 import org.quartz.JobKey;
 import org.quartz.Scheduler;
@@ -9,19 +15,14 @@ import org.quartz.SchedulerException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.ruoyi.common.constant.ScheduleConstants;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.job.TaskException;
-import com.ruoyi.quartz.domain.SysJob;
-import com.ruoyi.quartz.mapper.SysJobMapper;
-import com.ruoyi.quartz.service.ISysJobService;
-import com.ruoyi.quartz.util.CronUtils;
-import com.ruoyi.quartz.util.ScheduleUtils;
+
+import javax.annotation.PostConstruct;
+import java.util.List;
 
 /**
  * 定时任务调度信息 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysJobServiceImpl implements ISysJobService

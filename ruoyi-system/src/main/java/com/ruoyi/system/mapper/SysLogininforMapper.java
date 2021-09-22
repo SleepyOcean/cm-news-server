@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysLogininfor;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysLogininfor;
 
 /**
  * 系统访问日志情况信息 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysLogininforMapper
-{
+public interface SysLogininforMapper {
     /**
      * 新增系统登录日志
      * 

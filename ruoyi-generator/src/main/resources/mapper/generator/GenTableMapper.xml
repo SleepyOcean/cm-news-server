@@ -2,17 +2,17 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ruoyi.generator.mapper.GenTableMapper">
+<mapper namespace="com.netease.generator.mapper.GenTableMapper">
 
-	<resultMap type="GenTable" id="GenTableResult">
-	    <id     property="tableId"        column="table_id"          />
-		<result property="tableName"      column="table_name"        />
-		<result property="tableComment"   column="table_comment"     />
-		<result property="subTableName"   column="sub_table_name"    />
-		<result property="subTableFkName" column="sub_table_fk_name" />
-		<result property="className"      column="class_name"        />
-		<result property="tplCategory"    column="tpl_category"      />
-		<result property="packageName"    column="package_name"      />
+    <resultMap type="GenTable" id="GenTableResult">
+        <id property="tableId" column="table_id"/>
+        <result property="tableName" column="table_name"/>
+        <result property="tableComment" column="table_comment"/>
+        <result property="subTableName" column="sub_table_name"/>
+        <result property="subTableFkName" column="sub_table_fk_name"/>
+        <result property="className" column="class_name"/>
+        <result property="tplCategory" column="tpl_category"/>
+        <result property="packageName" column="package_name"/>
 		<result property="moduleName"     column="module_name"       />
 		<result property="businessName"   column="business_name"     />
 		<result property="functionName"   column="function_name"     />

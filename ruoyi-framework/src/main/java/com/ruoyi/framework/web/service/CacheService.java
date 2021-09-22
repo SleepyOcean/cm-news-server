@@ -1,15 +1,16 @@
-package com.ruoyi.framework.web.service;
+package com.netease.framework.web.service;
 
-import java.util.Set;
+import com.netease.common.constant.Constants;
+import com.netease.common.utils.CacheUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.utils.CacheUtils;
+
+import java.util.Set;
 
 /**
  * 缓存操作处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class CacheService

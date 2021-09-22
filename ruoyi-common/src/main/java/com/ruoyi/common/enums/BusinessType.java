@@ -1,9 +1,9 @@
-package com.ruoyi.common.enums;
+package com.netease.common.enums;
 
 /**
  * 业务操作类型
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public enum BusinessType
 {

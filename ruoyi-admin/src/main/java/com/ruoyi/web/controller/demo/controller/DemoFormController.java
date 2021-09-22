@@ -1,24 +1,25 @@
-package com.ruoyi.web.controller.demo.controller;
+package com.netease.web.controller.demo.controller;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.alibaba.fastjson.JSON;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.domain.CxSelect;
+import com.netease.common.json.JSONObject;
+import com.netease.common.json.JSONObject.JSONArray;
+import com.netease.common.utils.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.alibaba.fastjson.JSON;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.domain.CxSelect;
-import com.ruoyi.common.json.JSONObject;
-import com.ruoyi.common.json.JSONObject.JSONArray;
-import com.ruoyi.common.utils.StringUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 表单相关
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/demo/form")
@@ -313,7 +314,7 @@ public class DemoFormController
     @ResponseBody
     public AjaxResult collection()
     {
-        String[] array = { "ruoyi 1", "ruoyi 2", "ruoyi 3", "ruoyi 4", "ruoyi 5" };
+        String[] array = {"netease 1", "netease 2", "netease 3", "netease 4", "netease 5"};
         AjaxResult ajax = new AjaxResult();
         ajax.put("value", array);
         return ajax;

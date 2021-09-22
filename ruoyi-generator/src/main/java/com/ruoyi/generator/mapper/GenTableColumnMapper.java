@@ -1,15 +1,15 @@
-package com.ruoyi.generator.mapper;
+package com.netease.generator.mapper;
+
+import com.netease.generator.domain.GenTableColumn;
 
 import java.util.List;
-import com.ruoyi.generator.domain.GenTableColumn;
 
 /**
  * 业务字段 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface GenTableColumnMapper
-{
+public interface GenTableColumnMapper {
     /**
      * 根据表名称查询列信息
      * 

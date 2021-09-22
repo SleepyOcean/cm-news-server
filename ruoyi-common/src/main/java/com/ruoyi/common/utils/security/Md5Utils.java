@@ -1,16 +1,16 @@
-package com.ruoyi.common.utils.security;
+package com.netease.common.utils.security;
 
-import java.security.MessageDigest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.security.MessageDigest;
+
 /**
  * Md5加密方法
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public class Md5Utils
-{
+public class Md5Utils {
     private static final Logger log = LoggerFactory.getLogger(Md5Utils.class);
 
     private static byte[] md5(String s)

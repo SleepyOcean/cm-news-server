@@ -1,20 +1,20 @@
-package com.ruoyi.framework.aspectj;
+package com.netease.framework.aspectj;
 
+import com.netease.common.annotation.DataScope;
+import com.netease.common.core.domain.BaseEntity;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.utils.ShiroUtils;
+import com.netease.common.utils.StringUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
-import com.ruoyi.common.annotation.DataScope;
-import com.ruoyi.common.core.domain.BaseEntity;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 数据过滤处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Aspect
 @Component

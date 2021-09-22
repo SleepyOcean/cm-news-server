@@ -1,15 +1,15 @@
-package com.ruoyi.generator.service;
+package com.netease.generator.service;
+
+import com.netease.generator.domain.GenTableColumn;
 
 import java.util.List;
-import com.ruoyi.generator.domain.GenTableColumn;
 
 /**
  * 业务字段 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface IGenTableColumnService
-{
+public interface IGenTableColumnService {
     /**
      * 查询业务字段列表
      * 

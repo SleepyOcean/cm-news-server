@@ -1,17 +1,17 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.common.core.domain.Ztree;
+import com.netease.common.core.domain.entity.SysDept;
+import com.netease.common.core.domain.entity.SysRole;
 
 import java.util.List;
-import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.domain.entity.SysDept;
-import com.ruoyi.common.core.domain.entity.SysRole;
 
 /**
  * 部门管理 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface ISysDeptService
-{
+public interface ISysDeptService {
     /**
      * 查询部门管理数据
      * 

@@ -1,13 +1,14 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.system.domain.SysUserOnline;
 
 import java.util.Date;
 import java.util.List;
-import com.ruoyi.system.domain.SysUserOnline;
 
 /**
  * 在线用户 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public interface ISysUserOnlineService
 {

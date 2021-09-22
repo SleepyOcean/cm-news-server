@@ -1,9 +1,9 @@
-package com.ruoyi.common.exception;
+package com.netease.common.exception;
 
 /**
  * 全局异常
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class GlobalException extends RuntimeException
 {

@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysNotice;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysNotice;
 
 /**
  * 公告 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysNoticeMapper
-{
+public interface SysNoticeMapper {
     /**
      * 查询公告信息
      * 

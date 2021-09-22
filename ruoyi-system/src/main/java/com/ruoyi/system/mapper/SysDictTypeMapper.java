@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.common.core.domain.entity.SysDictType;
 
 import java.util.List;
-import com.ruoyi.common.core.domain.entity.SysDictType;
 
 /**
  * 字典表 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysDictTypeMapper
-{
+public interface SysDictTypeMapper {
     /**
      * 根据条件分页查询字典类型
      * 

@@ -1,31 +1,28 @@
-package com.ruoyi.web.controller.system;
+package com.netease.web.controller.system;
 
-import java.util.List;
+import com.netease.common.annotation.Log;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.controller.BaseController;
+import com.netease.common.core.domain.AjaxResult;
+import com.netease.common.core.domain.Ztree;
+import com.netease.common.core.domain.entity.SysDept;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.enums.BusinessType;
+import com.netease.common.utils.StringUtils;
+import com.netease.system.service.ISysDeptService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import com.ruoyi.common.annotation.Log;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.domain.entity.SysDept;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.enums.BusinessType;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.service.ISysDeptService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 部门信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/system/dept")

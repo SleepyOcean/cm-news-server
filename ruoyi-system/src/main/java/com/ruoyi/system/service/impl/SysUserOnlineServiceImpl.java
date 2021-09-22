@@ -1,24 +1,25 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
+
+import com.netease.common.constant.ShiroConstants;
+import com.netease.common.utils.DateUtils;
+import com.netease.common.utils.StringUtils;
+import com.netease.system.domain.SysUserOnline;
+import com.netease.system.mapper.SysUserOnlineMapper;
+import com.netease.system.service.ISysUserOnlineService;
+import org.apache.shiro.cache.Cache;
+import org.apache.shiro.cache.ehcache.EhCacheManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Deque;
 import java.util.List;
-import org.apache.shiro.cache.Cache;
-import org.apache.shiro.cache.ehcache.EhCacheManager;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.domain.SysUserOnline;
-import com.ruoyi.system.mapper.SysUserOnlineMapper;
-import com.ruoyi.system.service.ISysUserOnlineService;
 
 /**
  * 在线用户 服务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysUserOnlineServiceImpl implements ISysUserOnlineService

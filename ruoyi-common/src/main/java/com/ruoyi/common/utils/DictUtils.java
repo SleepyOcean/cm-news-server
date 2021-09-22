@@ -1,14 +1,15 @@
-package com.ruoyi.common.utils;
+package com.netease.common.utils;
+
+import com.netease.common.constant.Constants;
+import com.netease.common.core.domain.entity.SysDictData;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-import org.springframework.stereotype.Component;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.core.domain.entity.SysDictData;
 
 /**
  * 字典工具类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Component
 public class DictUtils

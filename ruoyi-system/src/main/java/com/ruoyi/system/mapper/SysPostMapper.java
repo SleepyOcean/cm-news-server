@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysPost;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysPost;
 
 /**
  * 岗位信息 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysPostMapper
-{
+public interface SysPostMapper {
     /**
      * 查询岗位数据集合
      * 

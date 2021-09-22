@@ -1,20 +1,16 @@
-package com.ruoyi.common.json;
+package com.netease.common.json;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.netease.common.utils.StringUtils;
+
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 通用消息对象，基于Map实现的可嵌套数据结构。 支持JSON数据结构。
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class JSONObject extends LinkedHashMap<String, Object>
 {

@@ -1,15 +1,15 @@
-package com.ruoyi.web.controller.monitor;
+package com.netease.web.controller.monitor;
 
+import com.netease.common.core.controller.BaseController;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.ruoyi.common.core.controller.BaseController;
 
 /**
  * druid 监控
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/monitor/data")

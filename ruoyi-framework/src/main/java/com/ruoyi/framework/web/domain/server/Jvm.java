@@ -1,16 +1,16 @@
-package com.ruoyi.framework.web.domain.server;
+package com.netease.framework.web.domain.server;
+
+import com.netease.common.utils.Arith;
+import com.netease.common.utils.DateUtils;
 
 import java.lang.management.ManagementFactory;
-import com.ruoyi.common.utils.Arith;
-import com.ruoyi.common.utils.DateUtils;
 
 /**
  * JVM相关信息
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public class Jvm
-{
+public class Jvm {
     /**
      * 当前JVM占用的内存总数(M)
      */

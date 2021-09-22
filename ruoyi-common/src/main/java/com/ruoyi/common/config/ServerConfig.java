@@ -1,14 +1,14 @@
-package com.ruoyi.common.config;
+package com.netease.common.config;
+
+import com.netease.common.utils.ServletUtils;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
-import org.springframework.stereotype.Component;
-import com.ruoyi.common.utils.ServletUtils;
 
 /**
  * 服务相关配置
- * 
- * @author ruoyi
  *
+ * @author netease
  */
 @Component
 public class ServerConfig

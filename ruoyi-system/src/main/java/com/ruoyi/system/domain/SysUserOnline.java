@@ -1,15 +1,16 @@
-package com.ruoyi.system.domain;
+package com.netease.system.domain;
 
-import java.util.Date;
+import com.netease.common.core.domain.BaseEntity;
+import com.netease.common.enums.OnlineStatus;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.core.domain.BaseEntity;
-import com.ruoyi.common.enums.OnlineStatus;
+
+import java.util.Date;
 
 /**
  * 当前在线会话 sys_user_online
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class SysUserOnline extends BaseEntity
 {

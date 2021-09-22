@@ -1,21 +1,22 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.List;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.text.Convert;
+import com.netease.common.exception.ServiceException;
+import com.netease.common.utils.StringUtils;
+import com.netease.system.domain.SysPost;
+import com.netease.system.mapper.SysPostMapper;
+import com.netease.system.mapper.SysUserPostMapper;
+import com.netease.system.service.ISysPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.exception.ServiceException;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.domain.SysPost;
-import com.ruoyi.system.mapper.SysPostMapper;
-import com.ruoyi.system.mapper.SysUserPostMapper;
-import com.ruoyi.system.service.ISysPostService;
+
+import java.util.List;
 
 /**
  * 岗位信息 服务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysPostServiceImpl implements ISysPostService

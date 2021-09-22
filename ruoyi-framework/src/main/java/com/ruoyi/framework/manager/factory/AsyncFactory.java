@@ -1,23 +1,20 @@
-package com.ruoyi.framework.manager.factory;
+package com.netease.framework.manager.factory;
 
-import java.util.TimerTask;
+import com.netease.common.constant.Constants;
+import com.netease.common.utils.*;
+import com.netease.common.utils.spring.SpringUtils;
+import com.netease.framework.shiro.session.OnlineSession;
+import com.netease.system.domain.SysLogininfor;
+import com.netease.system.domain.SysOperLog;
+import com.netease.system.domain.SysUserOnline;
+import com.netease.system.service.ISysOperLogService;
+import com.netease.system.service.ISysUserOnlineService;
+import com.netease.system.service.impl.SysLogininforServiceImpl;
+import eu.bitwalker.useragentutils.UserAgent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.utils.AddressUtils;
-import com.ruoyi.common.utils.LogUtils;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.common.utils.ShiroUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.framework.shiro.session.OnlineSession;
-import com.ruoyi.system.domain.SysLogininfor;
-import com.ruoyi.system.domain.SysOperLog;
-import com.ruoyi.system.domain.SysUserOnline;
-import com.ruoyi.system.service.ISysOperLogService;
-import com.ruoyi.system.service.ISysUserOnlineService;
-import com.ruoyi.system.service.impl.SysLogininforServiceImpl;
-import eu.bitwalker.useragentutils.UserAgent;
+
+import java.util.TimerTask;
 
 /**
  * 异步工厂（产生任务用）

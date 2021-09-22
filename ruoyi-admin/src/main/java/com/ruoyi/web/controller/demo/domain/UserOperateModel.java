@@ -1,13 +1,13 @@
-package com.ruoyi.web.controller.demo.domain;
+package com.netease.web.controller.demo.domain;
+
+import com.netease.common.annotation.Excel;
+import com.netease.common.annotation.Excel.Type;
+import com.netease.common.core.domain.BaseEntity;
+import com.netease.common.utils.DateUtils;
 
 import java.util.Date;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.annotation.Excel.Type;
-import com.ruoyi.common.core.domain.BaseEntity;
-import com.ruoyi.common.utils.DateUtils;
 
-public class UserOperateModel extends BaseEntity
-{
+public class UserOperateModel extends BaseEntity {
     private static final long serialVersionUID = 1L;
 
     private int userId;

@@ -1,17 +1,18 @@
-package com.ruoyi.generator.service.impl;
+package com.netease.generator.service.impl;
 
-import java.util.List;
+import com.netease.common.core.text.Convert;
+import com.netease.generator.domain.GenTableColumn;
+import com.netease.generator.mapper.GenTableColumnMapper;
+import com.netease.generator.service.IGenTableColumnService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.generator.domain.GenTableColumn;
-import com.ruoyi.generator.mapper.GenTableColumnMapper;
-import com.ruoyi.generator.service.IGenTableColumnService;
+
+import java.util.List;
 
 /**
  * 业务字段 服务层实现
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class GenTableColumnServiceImpl implements IGenTableColumnService

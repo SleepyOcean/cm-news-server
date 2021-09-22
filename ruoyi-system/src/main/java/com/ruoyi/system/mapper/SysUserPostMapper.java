@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysUserPost;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysUserPost;
 
 /**
  * 用户与岗位关联表 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysUserPostMapper
-{
+public interface SysUserPostMapper {
     /**
      * 通过用户ID删除用户和岗位关联
      * 

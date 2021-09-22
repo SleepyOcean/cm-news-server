@@ -1,17 +1,18 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.common.core.domain.Ztree;
+import com.netease.common.core.domain.entity.SysMenu;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.core.domain.entity.SysUser;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.domain.entity.SysMenu;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.core.domain.entity.SysUser;
 
 /**
  * 菜单 业务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public interface ISysMenuService
 {

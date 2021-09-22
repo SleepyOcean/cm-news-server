@@ -1,15 +1,15 @@
-package com.ruoyi.system.mapper;
+package com.netease.system.mapper;
+
+import com.netease.system.domain.SysUserOnline;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysUserOnline;
 
 /**
  * 在线用户 数据层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface SysUserOnlineMapper
-{
+public interface SysUserOnlineMapper {
     /**
      * 通过会话序号查询信息
      * 

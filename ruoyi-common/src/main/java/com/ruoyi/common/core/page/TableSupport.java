@@ -1,12 +1,12 @@
-package com.ruoyi.common.core.page;
+package com.netease.common.core.page;
 
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.utils.ServletUtils;
+import com.netease.common.constant.Constants;
+import com.netease.common.utils.ServletUtils;
 
 /**
  * 表格数据处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class TableSupport
 {

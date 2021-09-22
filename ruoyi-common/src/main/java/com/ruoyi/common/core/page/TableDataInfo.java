@@ -1,12 +1,12 @@
-package com.ruoyi.common.core.page;
+package com.netease.common.core.page;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
  * 表格分页数据对象
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class TableDataInfo implements Serializable
 {

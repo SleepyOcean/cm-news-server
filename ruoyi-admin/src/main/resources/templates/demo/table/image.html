@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
-	<th:block th:include="include :: header('表格图片预览')" />
+	<th:block th:include="include :: header('表格图片预览')"/>
 </head>
 <body class="gray-bg">
-     <div class="container-div">
-		<div class="row">
-			<div class="col-sm-12 select-table table-striped">
-				<table id="bootstrap-table"></table>
-			</div>
+<div class="container-div">
+	<div class="row">
+		<div class="col-sm-12 select-table table-striped">
+			<table id="bootstrap-table"></table>
 		</div>
+	</div>
 	</div>
     <div th:include="include :: footer"></div>
     <script th:inline="javascript">
@@ -43,9 +43,9 @@
 				    	// 图片预览（注意：如存储在本地直接获取数据库路径，如有配置context-path需要使用ctx+路径）
 				    	// 如：/profile/upload/2019/08/08/3b7a839aced67397bac694d77611ce72.png
 				    	if(index % 2 == 0){
-				    		return $.table.imageView('http://demo.ruoyi.vip/img/profile.jpg');
+							return $.table.imageView('http://demo.netease.vip/img/profile.jpg');
 				    	}else {
-				    		return $.table.imageView('http://demo.ruoyi.vip/ruoyi.png');
+							return $.table.imageView('http://demo.netease.vip/netease.png');
 				    	}
 				    }
 				},

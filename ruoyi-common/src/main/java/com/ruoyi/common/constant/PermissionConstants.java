@@ -1,9 +1,9 @@
-package com.ruoyi.common.constant;
+package com.netease.common.constant;
 
 /**
  * 权限通用常量
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class PermissionConstants
 {

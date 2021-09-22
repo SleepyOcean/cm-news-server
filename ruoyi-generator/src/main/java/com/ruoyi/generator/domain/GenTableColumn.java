@@ -1,16 +1,16 @@
-package com.ruoyi.generator.domain;
+package com.netease.generator.domain;
+
+import com.netease.common.core.domain.BaseEntity;
+import com.netease.common.utils.StringUtils;
 
 import javax.validation.constraints.NotBlank;
-import com.ruoyi.common.core.domain.BaseEntity;
-import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 代码生成业务字段表 gen_table_column
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public class GenTableColumn extends BaseEntity
-{
+public class GenTableColumn extends BaseEntity {
     private static final long serialVersionUID = 1L;
 
     /** 编号 */

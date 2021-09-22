@@ -1,15 +1,15 @@
-package com.ruoyi.system.service;
+package com.netease.system.service;
+
+import com.netease.system.domain.SysOperLog;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysOperLog;
 
 /**
  * 操作日志 服务层
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public interface ISysOperLogService
-{
+public interface ISysOperLogService {
     /**
      * 新增操作日志
      * 

@@ -1,12 +1,12 @@
-package com.ruoyi.common.core.domain;
+package com.netease.common.core.domain;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
  * CxSelect树结构实体类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class CxSelect implements Serializable
 {

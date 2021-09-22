@@ -1,16 +1,18 @@
-package com.ruoyi.common.core.domain.entity;
+package com.netease.common.core.domain.entity;
 
-import javax.validation.constraints.*;
+import com.netease.common.annotation.Excel;
+import com.netease.common.annotation.Excel.ColumnType;
+import com.netease.common.core.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.annotation.Excel.ColumnType;
-import com.ruoyi.common.core.domain.BaseEntity;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 /**
  * 字典类型表 sys_dict_type
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class SysDictType extends BaseEntity
 {

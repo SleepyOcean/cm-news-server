@@ -1,11 +1,11 @@
-package com.ruoyi.common.utils.html;
+package com.netease.common.utils.html;
 
-import com.ruoyi.common.utils.StringUtils;
+import com.netease.common.utils.StringUtils;
 
 /**
  * 转义和反转义工具类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class EscapeUtil
 {

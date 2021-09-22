@@ -1,30 +1,24 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import com.netease.common.constant.UserConstants;
+import com.netease.common.core.domain.Ztree;
+import com.netease.common.core.domain.entity.SysMenu;
+import com.netease.common.core.domain.entity.SysRole;
+import com.netease.common.core.domain.entity.SysUser;
+import com.netease.common.utils.StringUtils;
+import com.netease.system.mapper.SysMenuMapper;
+import com.netease.system.mapper.SysRoleMenuMapper;
+import com.netease.system.service.ISysMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.domain.entity.SysMenu;
-import com.ruoyi.common.core.domain.entity.SysRole;
-import com.ruoyi.common.core.domain.entity.SysUser;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.mapper.SysMenuMapper;
-import com.ruoyi.system.mapper.SysRoleMenuMapper;
-import com.ruoyi.system.service.ISysMenuService;
+
+import java.text.MessageFormat;
+import java.util.*;
 
 /**
  * 菜单 业务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysMenuServiceImpl implements ISysMenuService

@@ -1,22 +1,22 @@
-package com.ruoyi.common.json;
+package com.netease.common.json;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
 /**
  * JSON解析处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public class JSON
-{
+public class JSON {
     public static final String DEFAULT_FAIL = "\"Parse failed\"";
     private static final ObjectMapper objectMapper = new ObjectMapper();
     private static final ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();

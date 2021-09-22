@@ -2,17 +2,17 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ruoyi.system.mapper.SysOperLogMapper">
+<mapper namespace="com.netease.system.mapper.SysOperLogMapper">
 
-	<resultMap type="SysOperLog" id="SysOperLogResult">
-		<id     property="operId"         column="oper_id"        />
-		<result property="title"          column="title"          />
-		<result property="businessType"   column="business_type"  />
-		<result property="method"         column="method"         />
-		<result property="requestMethod"  column="request_method" />
-		<result property="operatorType"   column="operator_type"  />
-		<result property="operName"       column="oper_name"      />
-		<result property="deptName"       column="dept_name"      />
+    <resultMap type="SysOperLog" id="SysOperLogResult">
+        <id property="operId" column="oper_id"/>
+        <result property="title" column="title"/>
+        <result property="businessType" column="business_type"/>
+        <result property="method" column="method"/>
+        <result property="requestMethod" column="request_method"/>
+        <result property="operatorType" column="operator_type"/>
+        <result property="operName" column="oper_name"/>
+        <result property="deptName" column="dept_name"/>
 		<result property="operUrl"        column="oper_url"       />
 		<result property="operIp"         column="oper_ip"        />
 		<result property="operLocation"   column="oper_location"  />

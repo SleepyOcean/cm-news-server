@@ -1,16 +1,17 @@
-package com.ruoyi.framework.shiro.web.filter.sync;
+package com.netease.framework.shiro.web.filter.sync;
+
+import com.netease.common.constant.ShiroConstants;
+import com.netease.framework.shiro.session.OnlineSession;
+import com.netease.framework.shiro.session.OnlineSessionDAO;
+import org.apache.shiro.web.filter.PathMatchingFilter;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import org.apache.shiro.web.filter.PathMatchingFilter;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.framework.shiro.session.OnlineSession;
-import com.ruoyi.framework.shiro.session.OnlineSessionDAO;
 
 /**
  * 同步Session数据到Db
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class SyncOnlineSessionFilter extends PathMatchingFilter
 {

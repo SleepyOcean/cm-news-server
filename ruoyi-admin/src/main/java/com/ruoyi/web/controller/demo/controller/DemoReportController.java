@@ -1,4 +1,4 @@
-package com.ruoyi.web.controller.demo.controller;
+package com.netease.web.controller.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 报表
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Controller
 @RequestMapping("/demo/report")

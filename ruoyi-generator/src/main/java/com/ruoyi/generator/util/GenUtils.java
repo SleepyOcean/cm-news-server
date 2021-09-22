@@ -1,17 +1,18 @@
-package com.ruoyi.generator.util;
+package com.netease.generator.util;
+
+import com.netease.common.constant.GenConstants;
+import com.netease.common.utils.StringUtils;
+import com.netease.generator.config.GenConfig;
+import com.netease.generator.domain.GenTable;
+import com.netease.generator.domain.GenTableColumn;
+import org.apache.commons.lang3.RegExUtils;
 
 import java.util.Arrays;
-import org.apache.commons.lang3.RegExUtils;
-import com.ruoyi.common.constant.GenConstants;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.generator.config.GenConfig;
-import com.ruoyi.generator.domain.GenTable;
-import com.ruoyi.generator.domain.GenTableColumn;
 
 /**
  * 代码生成器 工具类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 public class GenUtils
 {

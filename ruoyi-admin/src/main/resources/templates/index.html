@@ -14,7 +14,7 @@
     <link th:href="@{/css/animate.min.css}" rel="stylesheet"/>
     <link th:href="@{/css/style.min.css}" rel="stylesheet"/>
     <link th:href="@{/css/skins.css}" rel="stylesheet"/>
-    <link th:href="@{/ruoyi/css/ry-ui.css?v=4.7.0}" rel="stylesheet"/>
+    <link rel="stylesheet" th:href="@{/netease/css/ry-ui.css?v=4.7.0}"/>
 </head>
 <body class="fixed-sidebar full-height-layout gray-bg" th:classappend="${isMobile} ? 'canvas-menu'" style="overflow: hidden">
 <div id="wrapper">
@@ -26,7 +26,7 @@
         </div>
         <a th:href="@{/index}">
             <li class="logo hidden-xs">
-                <span class="logo-lg">RuoYi</span>
+                <span class="logo-lg">NetEase</span>
             </li>
          </a>
         <div class="sidebar-collapse">
@@ -191,7 +191,9 @@
                     </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right welcome-message">
-                    <li><a data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="开发文档" href="http://doc.ruoyi.vip/ruoyi" target="_blank"><i class="fa fa-question-circle"></i> 文档</a></li>
+                    <li><a data-placement="bottom" data-toggle="tooltip" data-trigger="hover"
+                           href="http://doc.netease.vip/netease" target="_blank" title="开发文档"><i
+                            class="fa fa-question-circle"></i> 文档</a></li>
                     <li><a data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="锁定屏幕" href="#" id="lockScreen"><i class="fa fa-lock"></i> 锁屏</a></li>
 	                <li><a data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="全屏显示" href="#" id="fullScreen"><i class="fa fa-arrows-alt"></i> 全屏</a></li>
                     <li class="dropdown user-menu">
@@ -244,12 +246,12 @@
         <a id="ax_close_max" class="ax_close_max" href="#" title="关闭全屏"> <i class="fa fa-times-circle-o"></i> </a>
 
         <div class="row mainContent" id="content-main" th:style="${#bools.isFalse(ignoreFooter)} ? |height: calc(100% - 91px)|">
-            <iframe class="RuoYi_iframe" name="iframe0" width="100%" height="100%" th:data-id="@{/system/main}"
+            <iframe class="NetEase_iframe" height="100%" name="iframe0" th:data-id="@{/system/main}" width="100%"
                     th:src="@{/system/main}" frameborder="0" seamless></iframe>
         </div>
         
         <div th:if="${ignoreFooter}" class="footer">
-            <div class="pull-right">© [[${copyrightYear}]] RuoYi Copyright </div>
+            <div class="pull-right">© [[${copyrightYear}]] NetEase Copyright</div>
         </div>
     </div>
     <!--右侧部分结束-->
@@ -262,19 +264,21 @@
 <script th:src="@{/js/jquery.contextMenu.min.js}"></script>
 <script th:src="@{/ajax/libs/blockUI/jquery.blockUI.js}"></script>
 <script th:src="@{/ajax/libs/layer/layer.min.js}"></script>
-<script th:src="@{/ruoyi/js/ry-ui.js?v=4.7.0}"></script>
-<script th:src="@{/ruoyi/js/common.js?v=4.7.0}"></script>
-<script th:src="@{/ruoyi/index.js?v=20201208}"></script>
+<script th:src="@{/netease/js/ry-ui.js?v=4.7.0}"></script>
+<script th:src="@{/netease/js/common.js?v=4.7.0}"></script>
+<script th:src="@{/netease/index.js?v=20201208}"></script>
 <script th:src="@{/ajax/libs/fullscreen/jquery.fullscreen.js}"></script>
 <script th:inline="javascript">
-window.history.forward(1);
-var ctx = [[@{/}]]; 
-var lockscreen = [[${session.lockscreen}]]; 
-if(lockscreen){window.top.location=ctx+"lockscreen";}
-// 皮肤缓存
-var skin = storage.get("skin");
-// history（表示去掉地址的#）否则地址以"#"形式展示
-var mode = "history";
+    window.history.forward(1);
+    var ctx = [[@{/}]];
+    var lockscreen = [[${session.lockscreen}]];
+    if (lockscreen) {
+        window.top.location = ctx + "lockscreen";
+    }
+    // 皮肤缓存
+    var skin = storage.get("skin");
+    // history（表示去掉地址的#）否则地址以"#"形式展示
+    var mode = "history";
 // 历史访问路径缓存
 var historyPath = storage.get("historyPath");
 // 是否页签与菜单联动

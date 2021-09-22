@@ -1,18 +1,16 @@
-package com.ruoyi;
+package com.netease;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
  * web容器中进行部署
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
-public class RuoYiServletInitializer extends SpringBootServletInitializer
-{
+public class NetEaseServletInitializer extends SpringBootServletInitializer {
     @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application)
-    {
-        return application.sources(RuoYiApplication.class);
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(NetEaseApplication.class);
     }
 }

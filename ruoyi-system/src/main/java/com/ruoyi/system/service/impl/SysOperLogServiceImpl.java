@@ -1,17 +1,18 @@
-package com.ruoyi.system.service.impl;
+package com.netease.system.service.impl;
 
-import java.util.List;
+import com.netease.common.core.text.Convert;
+import com.netease.system.domain.SysOperLog;
+import com.netease.system.mapper.SysOperLogMapper;
+import com.netease.system.service.ISysOperLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.system.domain.SysOperLog;
-import com.ruoyi.system.mapper.SysOperLogMapper;
-import com.ruoyi.system.service.ISysOperLogService;
+
+import java.util.List;
 
 /**
  * 操作日志 服务层处理
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Service
 public class SysOperLogServiceImpl implements ISysOperLogService

@@ -1,17 +1,16 @@
-package com.ruoyi.common.config;
+package com.netease.common.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
  * 全局配置类
- * 
- * @author ruoyi
+ *
+ * @author netease
  */
 @Component
-@ConfigurationProperties(prefix = "ruoyi")
-public class RuoYiConfig
-{
+@ConfigurationProperties(prefix = "netease")
+public class NetEaseConfig {
     /** 项目名称 */
     private static String name;
 
@@ -37,7 +36,7 @@ public class RuoYiConfig
 
     public void setName(String name)
     {
-        RuoYiConfig.name = name;
+        NetEaseConfig.name = name;
     }
 
     public static String getVersion()
@@ -47,7 +46,7 @@ public class RuoYiConfig
 
     public void setVersion(String version)
     {
-        RuoYiConfig.version = version;
+        NetEaseConfig.version = version;
     }
 
     public static String getCopyrightYear()
@@ -57,7 +56,7 @@ public class RuoYiConfig
 
     public void setCopyrightYear(String copyrightYear)
     {
-        RuoYiConfig.copyrightYear = copyrightYear;
+        NetEaseConfig.copyrightYear = copyrightYear;
     }
 
     public static boolean isDemoEnabled()
@@ -67,7 +66,7 @@ public class RuoYiConfig
 
     public void setDemoEnabled(boolean demoEnabled)
     {
-        RuoYiConfig.demoEnabled = demoEnabled;
+        NetEaseConfig.demoEnabled = demoEnabled;
     }
 
     public static String getProfile()
@@ -77,7 +76,7 @@ public class RuoYiConfig
 
     public void setProfile(String profile)
     {
-        RuoYiConfig.profile = profile;
+        NetEaseConfig.profile = profile;
     }
 
     public static boolean isAddressEnabled()
@@ -87,7 +86,7 @@ public class RuoYiConfig
 
     public void setAddressEnabled(boolean addressEnabled)
     {
-        RuoYiConfig.addressEnabled = addressEnabled;
+        NetEaseConfig.addressEnabled = addressEnabled;
     }
 
     /**
